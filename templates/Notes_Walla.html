@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block title %}
+A Note Keeping
+{% endblock title %}
+
+{% block body %}
+    <style>
+        /* Styles for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        /* Styles for the header */
+        .page-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #007bff;
+        }
+        /* Styles for the note container */
+        .note-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Styles for the note */
+        .note {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            transition: box-shadow 0.3s ease;
+        }
+        .note:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+        /* Styles for the note title */
+        .note-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        /* Styles for the note content */
+        .note-content {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        /* Styles for the download button */
+        .download-button {
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+            padding: 15px 30px;
+            font-size: 20px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+        /* Styles for the footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #777;
+        }
+    </style>
+
+    <h1 class="page-title">Notes Walla</h1>
+    <div class="note-container">
+        <div class="note">
+            <h2 class="note-title">Important Notes</h2>
+            <p class="note-content">
+    Wishing you all the very best for your upcoming exams! Your hard work and dedication are bound to pay off. Remember to stay calm, focused, and confident. Take care of yourself, get plenty of rest, and believe in your abilities. You've got this!
+</p>
+            <a class="download-button" href="https://drive.google.com/drive/folders/1ObZ1FQZbiq4eUNlSUmk3vRzHqjXLrWrM?usp=sharing">Download Notes</a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Notes Walla (Raj Patle) &middot; <a href="#">Privacy</a></p>
+    </footer>
+{% endblock body %}
